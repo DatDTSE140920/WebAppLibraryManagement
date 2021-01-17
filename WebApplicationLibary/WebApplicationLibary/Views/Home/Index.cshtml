@@ -1,0 +1,94 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href=@Url.Action("Index","Home")>
+                <img class="img-logo" width="60px;" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_the_NSDAP_%281920%E2%80%931945%29.svg" />
+            </a>
+        </div>
+        <form>
+            <input placeholder="Search Book" class="Search" />
+        </form>
+        <div class="cart">
+            <i  class="fas fa-shopping-cart">Giỏ Hàng</i>
+        </div>
+
+    </header>
+    <div class="navbar">
+        <div class="navbar-home">
+            <i style="font-size:20px;" class="fas fa-home"><label>Trang Chủ</label></i>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .cart{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-top:9px; 
+        margin-left:70px;
+        background-color:lavender;
+        width:100px;
+        height:35px;
+        border-radius:3px;
+
+    }
+    .Search{
+        margin-left:100px;
+        width:500px;
+        height:28px;
+       margin-top:9px;
+       outline:none;
+       border:none;
+       border: 1px solid grey  ;
+       border-radius:3px;
+    }
+    body {
+        position: absolute;
+        font-family: Dubai;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    header{
+        padding-left:300px;
+        width:100vw;
+        display:flex;
+        height:55px;
+        background-color:darkseagreen;
+    }
+    .logo{
+        height:50px;
+        
+    }
+    .navbar {
+        display: flex;
+        position:fixed;
+        width: 100vw;
+        height: 50px;
+        background-color: antiquewhite;
+        padding-left : 300px;
+    }
+    .navbar-home {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+</style>
